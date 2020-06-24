@@ -2,11 +2,11 @@
 
 一个 Kubernetes 集群 \(`cluster`\)包含多个节点\(`node`\)。
 
-### 节点
+### 节点（Node）
 
 两种类型：
 
-* 主节点：承载着k8s控制和管理整个集群系统的**控制面板**\(**`control panel`**\)
+* 主节点：承载着k8s控制和管理整个集群系统的控制面板\(`control panel`\)
 * 工作节点：运行用户实际部署的应用
 
 这些节点运行容器化的应用。 
@@ -67,6 +67,12 @@ cloud-controller-manager 仅运行云提供商特定的控制器循环。
 ### kubelet：
 
 一个在集群中每个节点上运行的代理。它保证容器都运行在 Pod 中。kubelet 接收一组通过各类机制提供给它的 PodSpecs，确保这些 PodSpecs 中描述的容器处于运行状态且健康
+
+查看 Kubelet 服务状态：
+
+```text
+sudo systemctl status kubelet
+```
 
 ### kube-proxy:
 
