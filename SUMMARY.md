@@ -13,4 +13,5 @@
 * [网络 \(Network\)](kubernetes-ji-ben-gai-nian/wang-luo-network.md)
 * [Deployment](kubernetes-ji-ben-gai-nian/deployment.md)
 * [服务\(Service\)](kubernetes-ji-ben-gai-nian/fu-wu-service.md)
+* [Lab 2](kubernetes-ji-ben-gai-nian/lab-2.md)
 
