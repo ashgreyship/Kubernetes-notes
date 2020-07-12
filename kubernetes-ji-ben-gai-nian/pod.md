@@ -25,18 +25,29 @@ spec:
 EOF
 ```
 
+#### 根据参数筛选 pods
+
+```bash
+kubectl get pods --field-selector=status.phase=Running,metadata.namespace=default
+```
+
+#### 查看所有pods的详细信息
+
+```text
+kubectl get pods -o wide
+```
+
 #### 获取指定`pod`的详细信息：
 
 ```text
+kubectl describe pod <pod-name>
 kubectl describe pod nginx
-kubectl describe pod <node-name>
-
 ```
 
 #### 删除`pod`
 
 ```text
-kubectl delete pod nginx 
+kubectl delete pod <pod-name> 
 ```
 
 

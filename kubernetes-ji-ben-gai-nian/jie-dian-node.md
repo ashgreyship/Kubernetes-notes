@@ -1,4 +1,4 @@
-# 节点\(Node\)
+# Node 节点
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
@@ -16,8 +16,8 @@ kubectl get nodes
 
 获取一个node的详细信息
 
-```text
-kubectl describe node $node_name
+```bash
+kubectl describe node <node_name>
 ```
 
 

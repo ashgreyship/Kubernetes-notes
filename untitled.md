@@ -20,7 +20,7 @@ kubectl get nodes
 kubectl get nodes -n <name-space>
 ```
 
-查看对象的相关信息：
+查看节点的详细信息：
 
 ```bash
  kubectl describe node <node-name> 
@@ -33,7 +33,17 @@ kubectl run kubia --image==blackbird698/kubia --port=8080 --generator=run/v1
 #generator 让Kubernetes 创建一个ReplicationController
 ```
 
+查看所有 `namespace`
 
+```bash
+kubectl get namespaces
+```
+
+创建新的 `namespace`
+
+```bash
+kubectl create namespace <ns-name>
+```
 
 
 

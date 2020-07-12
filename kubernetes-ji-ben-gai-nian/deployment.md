@@ -24,11 +24,15 @@
 cat <<EOF | kubectl create -f -
 apiVersion: apps/v1
 kind: Deployment
+# kind of object you want to create
 metadata:
+# uniquely identify the object,name and UID and
+# optional namespace
   name: nginx-deployment
   labels:
     app: nginx
 spec:
+# describe the desired state 
   replicas: 2
   selector:
     matchLabels:
@@ -38,6 +42,7 @@ spec:
       labels:
         app: nginx
     spec:
+    # container spec
       containers:
       - name: nginx
         image: nginx:1.15.4
@@ -58,16 +63,28 @@ kubectl get deployments
 kubectl describe deployment nginx-deployment
 ```
 
-删除 deployment 部署的一个pod
+### 删除 deployment 部署的一个pod
 
 ```yaml
 kubectl delete pod <pod-name>
 ```
 
-查看所有pods 发现 deployment 创建了一个新的 pod 来顶替被销毁的pod。
+### 查看所有pods 发现 deployment 创建了一个新的 pod 来顶替被销毁的pod。
 
 ```yaml
 kubectl get pods
+```
+
+### 从YAML文件创建 deployment
+
+```bash
+kubeectl create -f nginx.yaml
+```
+
+### 修改 deployment 的描述文件
+
+```bash
+kubectl edit deployment <deploymeny-name> -n <name-space>
 ```
 
 

@@ -78,7 +78,7 @@ sudo systemctl status kubelet
 
 负责组件之间的均衡负载网络流量。
 
-[kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) 是集群中每个节点上运行的网络代理,实现 Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/) 概念的一部分。kube-proxy 维护节点上的网络规则。这些网络规则允许从集群内部或外部的网络会话与 Pod 进行网络通信。
+[kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) 是集群中每个节点上运行的网络代理,实现 Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/service/) 概念的一部分。kube-proxy 维护节点上的`IP tables` 网络规则。这些网络规则允许从集群内部或外部的网络会话与 Pod 进行网络通信。
 
 ### Container runtime:
 
