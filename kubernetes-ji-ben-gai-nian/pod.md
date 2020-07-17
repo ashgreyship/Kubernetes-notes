@@ -50,5 +50,42 @@ kubectl describe pod nginx
 kubectl delete pod <pod-name> 
 ```
 
+#### Assign pod to a specific node with a label
 
+```yaml
+pods/pod-nginx.yaml 
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    disktype: ssd   # the node with label disktype=ssd
+
+```
+
+#### Assign pod to a specific node with a name
+
+```yaml
+pods/pod-nginx-specific-node.yaml 
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: foo-node # schedule pod to a node with name foo-node 
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+
+```
 

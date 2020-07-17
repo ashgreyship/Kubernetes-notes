@@ -14,5 +14,10 @@
 * [Network 网络](kubernetes-ji-ben-gai-nian/wang-luo-network.md)
 * [Deployment](kubernetes-ji-ben-gai-nian/deployment.md)
 * [Service 服务](kubernetes-ji-ben-gai-nian/fu-wu-service.md)
-* [Lab 2](kubernetes-ji-ben-gai-nian/lab-2.md)
+* [Release Binaries, Provisioning, and Types of Clusters](kubernetes-ji-ben-gai-nian/release-binaries-provisioning-and-types-of-clusters.md)
+
+## Lab
+
+* [Lab 2](lab/lab-2.md)
+* [Lab3: Deploying a Pod to a Node with a Label in Kubernetes](lab/lab3-deploying-a-pod-to-a-node-with-a-label-in-kubernetes.md)
 
