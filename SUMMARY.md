@@ -21,3 +21,7 @@
 * [Lab 2](lab/lab-2.md)
 * [Lab3: Deploying a Pod to a Node with a Label in Kubernetes](lab/lab3-deploying-a-pod-to-a-node-with-a-label-in-kubernetes.md)
 
+## Installation, Conﬁguration & Validation
+
+* [End-to-end tests](installation-con-guration-and-validation/end-to-end-tests.md)
+

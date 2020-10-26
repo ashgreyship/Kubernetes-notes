@@ -31,6 +31,12 @@ EOF
 kubectl get pods --field-selector=status.phase=Running,metadata.namespace=default
 ```
 
+#### 查看主节点的pods
+
+```bash
+kubectl get pods -o custom-columns=POD:metadata.name,NODE:spec.nodeName --sort-by spec.nodeName -n kube-system
+```
+
 #### 查看所有pods的详细信息
 
 ```text
