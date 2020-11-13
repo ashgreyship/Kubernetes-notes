@@ -25,3 +25,7 @@
 
 * [End-to-end tests](installation-con-guration-and-validation/end-to-end-tests.md)
 
+## 存储
+
+* [存储插件分类](cun-chu/cun-chu-cha-jian-fen-lei.md)
+
