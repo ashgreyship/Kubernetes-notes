@@ -17,7 +17,7 @@
 
 Pods 托管在工作节点上。Pods 属于应用程序工作负载\(`application workload`\)的组件。控制面板\(`control panel`\)管理着集群中的工作节点和pods。
 
-![](.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 ## 控制面板组件（Control Plane Components）
 
